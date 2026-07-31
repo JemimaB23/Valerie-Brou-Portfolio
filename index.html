@@ -1,214 +1,489 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valerie Brou — Public Policy Researcher &amp; Program Consultant</title>
+<meta name="description" content="Portfolio of Valerie Jemima Sara Brou — public policy research, program management, and communications across Africa, Europe, and the United States.">
 
-  <title>Hi, I'm Valerie.</title>
-  <meta name="description" content="Valerie Brou's professional portfolio site">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/main.css">
-  <style>
-    .avatar-initials{
-      width:200px;height:200px;border-radius:50%;margin:10px auto;
-      background:linear-gradient(135deg,#4b134f,#b24244);
-      color:#fff;display:flex;align-items:center;justify-content:center;
-      font-size:64px;font-weight:700;letter-spacing:2px;
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink: '#16233D',
+          inkdeep: '#0E1830',
+          parchment: '#F3EEE2',
+          parchdark: '#E8E0CE',
+          gold: '#B0812A',
+          goldlight: '#C99B47',
+          slate: '#4C6B77',
+          char: '#23262B',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          body: ['Inter', 'sans-serif'],
+          mono: ['IBM Plex Mono', 'monospace'],
+        },
+      }
     }
-    .icon-tile{
-      display:flex;align-items:center;justify-content:center;
-      background:linear-gradient(135deg,#4b134f,#782849);
-      border-radius:5px;color:#fff;font-size:4rem;
-      min-height:180px;max-height:260px;
-    }
-    @media only screen and (min-width:550px){
-      .icon-tile{height:100%;min-height:220px;}
-    }
-  </style>
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #F3EEE2; }
+
+  /* Ledger timeline rail */
+  .ledger { position: relative; }
+  .ledger::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, #B0812A 8%, #B0812A 92%, transparent);
+  }
+  @media (min-width: 768px) {
+    .ledger::before { left: 9.5rem; }
+  }
+  .ledger-dot {
+    position: absolute;
+    left: -4px;
+    top: 0.45rem;
+    width: 9px;
+    height: 9px;
+    border-radius: 9999px;
+    background: #B0812A;
+    box-shadow: 0 0 0 4px #F3EEE2;
+  }
+  @media (min-width: 768px) {
+    .ledger-dot { left: calc(9.5rem - 4px); }
+  }
+
+  .photo-ring {
+    background: conic-gradient(from 210deg, #B0812A, #C99B47, #16233D, #B0812A);
+    padding: 5px;
+  }
+
+  ::selection { background: #B0812A; color: #fff; }
+
+  .focus-card:hover .focus-icon { transform: translateY(-2px); }
+</style>
 </head>
 
-  <body>
-      <div id="particles-js">
-  <div class="header">
-      <h1>
-        <span class="site-title">Valerie Brou</span>
-        <span class="site-description">Public Policy Researcher &amp; Program Consultant</span>
-      </h1>
-      <div class="header-icons">
-        <a aria-label="E-Mail" href="mailto:valeriejemimab@gmail.com"><i class="icon fas fa-envelope"></i></a>
-        <a rel="me" aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/valeriebrou"><i class="icon fab fa-linkedin" aria-hidden="true"></i></a>
-        <a rel="me" aria-label="Publications" target="_blank" href="https://tinyurl.com/bdz5r8p4"><i class="icon fas fa-book-open" aria-hidden="true"></i></a>
+<body class="font-body text-char antialiased">
+
+<!-- ============ TOP MASTHEAD ============ -->
+<header class="sticky top-0 z-30 bg-ink text-parchment/90 border-b border-white/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+    <a href="#top" class="font-display text-lg tracking-wide text-white">Valerie&nbsp;Brou</a>
+    <nav class="hidden sm:flex items-center gap-8 font-mono text-[11px] uppercase tracking-widest text-parchment/70">
+      <a href="#about" class="hover:text-gold transition-colors">About</a>
+      <a href="#experience" class="hover:text-gold transition-colors">Experience</a>
+      <a href="#publications" class="hover:text-gold transition-colors">Publications</a>
+      <a href="#recognition" class="hover:text-gold transition-colors">Recognition</a>
+      <a href="#contact" class="hover:text-gold transition-colors">Contact</a>
+    </nav>
+    <a href="mailto:valeriejemimab@gmail.com" class="font-mono text-[11px] uppercase tracking-widest border border-gold/60 text-gold px-3 py-2 hover:bg-gold hover:text-ink transition-colors">
+      Email
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="top" class="relative overflow-hidden">
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,#1c2c4a_0%,transparent_45%)] opacity-60 pointer-events-none"></div>
+  <div class="max-w-6xl mx-auto px-6 md:px-10 pt-16 pb-20 md:pt-24 md:pb-28">
+    <p class="font-mono text-[11px] uppercase tracking-[0.25em] text-gold mb-8">
+      Public Policy &middot; Program Management &middot; Applied Research
+    </p>
+
+    <div class="grid md:grid-cols-[220px_1fr] gap-10 md:gap-14 items-start">
+
+      <!-- PROFILE PHOTO AREA -->
+      <!--
+        Replace the placeholder block below with your photo:
+        <div class="photo-ring rounded-2xl w-full aspect-[4/5] shadow-xl">
+          <img src="your-photo.jpg" alt="Valerie Brou" class="w-full h-full object-cover rounded-[14px]">
         </div>
-      <div class="header-links">
-        <a class="link" href="#about" data-scroll="">About</a>
-        ·
-        <a class="link" href="#projects" data-scroll="">Projects</a>
+      -->
+      <div class="photo-ring rounded-2xl w-full max-w-[220px] aspect-[4/5] shadow-xl">
+        <div class="w-full h-full rounded-[14px] bg-parchdark flex flex-col items-center justify-center gap-3 border border-ink/10">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-12 h-12 text-ink/30">
+            <circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M4 20c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+          <span class="font-mono text-[10px] uppercase tracking-widest text-ink/40 text-center px-4">Add your<br>photo here</span>
+        </div>
       </div>
-  </div>
-  <a class="down" href="#about" data-scroll=""><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
-</div>
 
-      <section id="about">
-         <div class="avatar">
-   <div class="avatar-initials">VB</div>
-</div>
+      <div>
+        <h1 class="font-display text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-ink">
+          Valerie Jemima<br>Sara&nbsp;Brou
+        </h1>
+        <p class="mt-4 font-display italic text-xl md:text-2xl text-slate">
+          Public Policy Researcher &amp; Program Consultant
+        </p>
 
- <div class="user-details">
-  <p>
-  I'm a public policy researcher and program consultant based in Virginia.
-  I'm currently pursuing a Master of Public Administration at James Madison University, after starting my career at the intersection of international business, sustainability, and wildlife conservation across Rwanda, Cameroon, C&ocirc;te d'Ivoire, and the UK.
-  I love turning messy data and stakeholder input into recommendations people can actually use. Interested in working together or having a chat? Feel free to contact me. </p>
-</div>
+        <p class="mt-6 max-w-xl text-[15px] leading-relaxed text-char/80">
+          I turn field data, stakeholder input, and messy operations into research and
+          programs institutions can act on. My work spans policy research, sustainability
+          consulting, and program management across Africa, Europe, and the United States —
+          currently while completing a Master of Public Administration at James Madison University.
+        </p>
 
-<div class="user">
-  <div class="tech">
-    <h2>Researching </h2>
-  <div class="icons">
-      <i class="icon fas fa-file-csv"></i>
-      <i class="icon fas fa-microscope"></i>
-      <i class="icon fas fa-chart-bar"></i>
+        <div class="mt-7 inline-flex items-center gap-2 border border-ink/15 bg-white/60 pl-3 pr-4 py-2 rounded-full">
+          <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
+          <span class="font-mono text-[11px] uppercase tracking-widest text-ink/70">
+            World Bank Youth Summit 2026 &middot; Top&nbsp;6 Innovation Lab Finalist
+          </span>
+        </div>
+
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="mailto:valeriejemimab@gmail.com" class="font-mono text-[11px] uppercase tracking-widest bg-ink text-white px-5 py-3 hover:bg-inkdeep transition-colors">
+            valeriejemimab@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/valeriebrou" target="_blank" rel="noopener" class="font-mono text-[11px] uppercase tracking-widest border border-ink/30 text-ink px-5 py-3 hover:border-ink transition-colors">
+            LinkedIn Profile
+          </a>
+          <span class="font-mono text-[11px] uppercase tracking-widest text-ink/50 px-5 py-3">
+            Virginia, United States
+          </span>
+        </div>
+      </div>
     </div>
-    <p>
-      Across policy, sustainability, and wildlife-economy projects, I've designed surveys, analyzed data in R, SPSS and NVivo, and turned quantitative and qualitative findings into research outputs people can act on.
-    </p>
   </div>
+</section>
 
-  <div class="tech">
-    <h2>Managing</h2>
-  <div class="icons">
-      <i class="icon fas fa-tasks"></i>
-      <i class="icon fas fa-cogs"></i>
-      <i class="icon fas fa-briefcase"></i>
+<!-- ============ IMPACT STRIP ============ -->
+<section class="bg-ink text-parchment">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+    <div>
+      <p class="font-display text-3xl md:text-4xl text-gold">$25K+</p>
+      <p class="mt-1 font-mono text-[11px] uppercase tracking-widest text-parchment/60">Raised for cross-river gorilla conservation</p>
     </div>
-    <p>
-      As an Odoo consultant and staff manager, I've built MVPs tailored to clients' workflows, tracked projects across teams, and kept multiple research and consulting engagements moving on schedule.
-    </p>
-  </div>
-  <div class="tech">
-    <h2>Communicating</h2>
-  <div class="icons">
-      <i class="icon fas fa-chalkboard-teacher"></i>
-      <i class="icon fas fa-pencil-alt"></i>
-      <i class="icon fas fa-comments"></i>
+    <div>
+      <p class="font-display text-3xl md:text-4xl text-gold">20</p>
+      <p class="mt-1 font-mono text-[11px] uppercase tracking-widest text-parchment/60">Person campaign team directed</p>
     </div>
-    <p>
-      I enjoy teaching, public speaking, and writing &mdash; from leading a fundraising campaign for wildlife conservation to co-authoring papers on ethics in public and nonprofit governance.
-    </p>
+    <div>
+      <p class="font-display text-3xl md:text-4xl text-gold">4+</p>
+      <p class="mt-1 font-mono text-[11px] uppercase tracking-widest text-parchment/60">Active faculty research projects</p>
+    </div>
+    <div>
+      <p class="font-display text-3xl md:text-4xl text-gold">3</p>
+      <p class="mt-1 font-mono text-[11px] uppercase tracking-widest text-parchment/60">Continents of program &amp; research experience</p>
+    </div>
   </div>
-</div>
+</section>
 
-      </section>
-      <section id="projects">
-        <div class="user-details">
-  <h1> Featured Projects </h1>
-</div>
+<!-- ============ ABOUT / FOCUS AREAS ============ -->
+<section id="about" class="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28">
+  <div class="flex items-end justify-between mb-12 gap-6">
+    <h2 class="font-display text-3xl md:text-4xl text-ink">Where I add value</h2>
+    <p class="hidden md:block font-mono text-[11px] uppercase tracking-widest text-ink/40 mb-1">01 &mdash; Focus areas</p>
+  </div>
 
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="focus-card bg-white/70 border border-ink/10 p-7 hover:border-gold/50 transition-colors">
+      <div class="focus-icon transition-transform">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-7 h-7 text-gold">
+          <path d="M4 19V5a1 1 0 0 1 1-1h9l6 6v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Z" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M14 4v5a1 1 0 0 0 1 1h5M8 13h6M8 16.5h4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3 class="font-display text-xl text-ink mt-5">Research &amp; Analysis</h3>
+      <p class="mt-3 text-[14.5px] leading-relaxed text-char/75">
+        Survey design, hypothesis development, and mixed-methods analysis in R, SPSS,
+        and NVivo — translating policy and conservation data into findings faculty,
+        NGOs, and stakeholders can act on.
+      </p>
+    </div>
 
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="writing" src="assets/img/kaitlyn-baker-vZJdYl5JVXY-unsplash.jpg">
-  </div>
-  <div class="contents-right">
-    <h3> Publications </h3>
-    <p>My co-authored work spans public and nonprofit ethics as well as conservation economics, including two forthcoming papers and my undergraduate thesis on Pygmy Hippo conservation awareness in C&ocirc;te d'Ivoire.</p>
-      <p align="center"><a class="project-link" href="https://tinyurl.com/bdz5r8p4">Read on Librarika</a></p>
-  </div>
-</div>
+    <div class="focus-card bg-white/70 border border-ink/10 p-7 hover:border-gold/50 transition-colors">
+      <div class="focus-icon transition-transform">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-7 h-7 text-gold">
+          <rect x="3.5" y="4.5" width="17" height="15" rx="1.2" stroke="currentColor" stroke-width="1.4"/>
+          <path d="M3.5 9.5h17M8 4.5v-1M16 4.5v-1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M7.5 13h2M7.5 16h2M11.5 13h5M11.5 16h5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3 class="font-display text-xl text-ink mt-5">Program &amp; People Management</h3>
+      <p class="mt-3 text-[14.5px] leading-relaxed text-char/75">
+        End-to-end delivery of MVPs, donor events, and cross-functional teams — from
+        client onboarding at AD Finance to budget stewardship for JMU's Graduate
+        Student Association.
+      </p>
+    </div>
 
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="reading" src="assets/img/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg">
+    <div class="focus-card bg-white/70 border border-ink/10 p-7 hover:border-gold/50 transition-colors">
+      <div class="focus-icon transition-transform">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-7 h-7 text-gold">
+          <path d="M4 5.5h13a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H10l-4.5 4v-4H4a1 1 0 0 1-1-1v-7a2 2 0 0 1 1-1.9Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3 class="font-display text-xl text-ink mt-5">Communication &amp; Engagement</h3>
+      <p class="mt-3 text-[14.5px] leading-relaxed text-char/75">
+        Briefing complex findings for non-technical audiences — from co-authored
+        governance papers to a $25,000 conservation campaign reaching international
+        donors and community rangers alike.
+      </p>
+    </div>
   </div>
-  <div class="contents-left">
-    <h3>State of the Wildlife Economy Reports</h3>
-    <p>As a research intern with ALU's School of Wildlife Conservation, I collected data on ecotourism, carbon markets, hunting, and non-timber forest products, contributing case studies to the State of the Wildlife Economy reports for Africa and Benin.</p>
-  </div>
-</div>
+</section>
 
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="campaign writing" src="assets/img/dariusz-sankowski-dvK_CT1Wg78-unsplash.jpg">
-  </div>
-  <div class="contents-right">
-    <h3>Cross River Gorilla Fundraising Campaign</h3>
-    <p>I led a campaign for the African Conservation Foundation that raised $25,000 to protect cross-river gorillas in southwest Cameroon, directing a 20-person team and coordinating roughly 1,000 awareness articles.</p>
-  </div>
-</div>
+<!-- ============ EXPERIENCE (LEDGER) ============ -->
+<section id="experience" class="bg-parchdark/60 border-y border-ink/10">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28">
+    <div class="flex items-end justify-between mb-14 gap-6">
+      <h2 class="font-display text-3xl md:text-4xl text-ink">Experience</h2>
+      <p class="hidden md:block font-mono text-[11px] uppercase tracking-widest text-ink/40 mb-1">02 &mdash; Career record</p>
+    </div>
 
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="global engagement" src="assets/img/galaxy.jpg">
-  </div>
-  <div class="contents-left">
-    <h3>UN &amp; World Bank Youth Engagement</h3>
-    <p>I joined the UNA-NCA cohort at the Global Engagement Summit at UN Headquarters, and was selected as a Youth Delegate for the 2026 World Bank Youth Summit, where our team placed among the Top 6 Innovation Lab finalists.</p>
-  </div>
-</div>
+    <div class="ledger space-y-12">
 
-<div class="user-projects">
-  <div class="images-left">
-    <div class="icon-tile"><i class="icon fas fa-landmark"></i></div>
-  </div>
-  <div class="contents-right">
-    <h3>Policy Research at JMU</h3>
-    <p>As a Graduate Research Teaching Assistant, I support Introduction to Public Policy instruction and contribute to 4+ active faculty research projects, from Qualtrics survey design to preliminary data analysis.</p>
-  </div>
-</div>
+      <div class="relative md:pl-[11.5rem] pl-6">
+        <span class="ledger-dot"></span>
+        <p class="absolute left-0 top-0 hidden md:block font-mono text-xs text-ink/50 w-32 text-right pr-6">2025 &mdash; Present</p>
+        <p class="md:hidden font-mono text-xs text-gold mb-1">2025 &mdash; Present</p>
+        <h3 class="font-display text-lg text-ink">Graduate Research Teaching Assistant</h3>
+        <p class="font-mono text-xs uppercase tracking-widest text-slate mt-1">JMU Department of Political Science &middot; Virginia</p>
+        <p class="mt-2 text-[14.5px] leading-relaxed text-char/75 max-w-2xl">
+          Support instruction for Introduction to Public Policy and contribute to 4+ active
+          faculty research projects, including Qualtrics survey design, hypothesis
+          development, and preliminary data analysis.
+        </p>
+      </div>
 
-<div class="user-projects">
-  <div class="images-right">
-    <div class="icon-tile"><i class="icon fas fa-cogs"></i></div>
-  </div>
-  <div class="contents-left">
-    <h3>Odoo Consulting &amp; Enablement</h3>
-    <p>As Senior Consultant at AD Finance, I designed client-tailored MVPs, ran webinars and conferences, and wrote guides and tutorials that helped onboard new clients internationally. Certified Odoo V16.</p>
-  </div>
-</div>
+      <div class="relative md:pl-[11.5rem] pl-6">
+        <span class="ledger-dot"></span>
+        <p class="absolute left-0 top-0 hidden md:block font-mono text-xs text-ink/50 w-32 text-right pr-6">2026</p>
+        <p class="md:hidden font-mono text-xs text-gold mb-1">May &mdash; Aug 2026</p>
+        <h3 class="font-display text-lg text-ink">Education, Outreach &amp; Program Intern</h3>
+        <p class="font-mono text-xs uppercase tracking-widest text-slate mt-1">Edith J. Carrier Arboretum, JMU &middot; Virginia</p>
+        <p class="mt-2 text-[14.5px] leading-relaxed text-char/75 max-w-2xl">
+          Designed a student employment program framework, directed an 80-guest donor
+          appreciation event, and helped overhaul the arboretum's website through JMU's
+          Cascade CMS.
+        </p>
+      </div>
 
-<div class="user-projects">
-  <div class="images-left">
-    <div class="icon-tile"><i class="icon fas fa-tasks"></i></div>
-  </div>
-  <div class="contents-right">
-    <h3>Team &amp; Project Management</h3>
-    <p>As Odoo Staff Manager at MADATA, I directed ongoing projects, reported progress to the COO, and designed performance monitoring tools to strengthen coordination across teams.</p>
-  </div>
-</div>
+      <div class="relative md:pl-[11.5rem] pl-6">
+        <span class="ledger-dot"></span>
+        <p class="absolute left-0 top-0 hidden md:block font-mono text-xs text-ink/50 w-32 text-right pr-6">2025</p>
+        <p class="md:hidden font-mono text-xs text-gold mb-1">May &mdash; Sept 2025</p>
+        <h3 class="font-display text-lg text-ink">Odoo Staff Manager</h3>
+        <p class="font-mono text-xs uppercase tracking-widest text-slate mt-1">MADATA &middot; Abidjan, Ivory Coast</p>
+        <p class="mt-2 text-[14.5px] leading-relaxed text-char/75 max-w-2xl">
+          Directed ongoing projects and progress reporting to the COO; designed performance
+          monitoring tools that strengthened coordination across functional units.
+        </p>
+      </div>
 
-<div class="user-projects">
-  <div class="images-right">
-    <div class="icon-tile"><i class="icon fas fa-tree"></i></div>
-  </div>
-  <div class="contents-left">
-    <h3>Arboretum Program &amp; Web Overhaul</h3>
-    <p>At the Edith J. Carrier Arboretum, I designed a student employment program framework, directed an 80-guest donor appreciation event, and helped overhaul the arboretum's website via JMU's Cascade CMS.</p>
-  </div>
-</div>
+      <div class="relative md:pl-[11.5rem] pl-6">
+        <span class="ledger-dot"></span>
+        <p class="absolute left-0 top-0 hidden md:block font-mono text-xs text-ink/50 w-32 text-right pr-6">2023 &mdash; 2025</p>
+        <p class="md:hidden font-mono text-xs text-gold mb-1">Sept 2023 &mdash; Aug 2025</p>
+        <h3 class="font-display text-lg text-ink">Senior Consultant</h3>
+        <p class="font-mono text-xs uppercase tracking-widest text-slate mt-1">AD Finance &middot; Kigali, Rwanda</p>
+        <p class="mt-2 text-[14.5px] leading-relaxed text-char/75 max-w-2xl">
+          Designed and implemented client-tailored MVPs on Odoo, ran webinars and
+          conferences, and authored onboarding guides that expanded international client
+          adoption. Certified Odoo V16.
+        </p>
+      </div>
 
-<div class="user-projects">
-  <div class="images-left">
-    <div class="icon-tile"><i class="icon fas fa-users"></i></div>
+      <div class="relative md:pl-[11.5rem] pl-6">
+        <span class="ledger-dot"></span>
+        <p class="absolute left-0 top-0 hidden md:block font-mono text-xs text-ink/50 w-32 text-right pr-6">2022</p>
+        <p class="md:hidden font-mono text-xs text-gold mb-1">Jun &mdash; Aug 2022</p>
+        <h3 class="font-display text-lg text-ink">Communication &amp; Fundraising Campaign Lead</h3>
+        <p class="font-mono text-xs uppercase tracking-widest text-slate mt-1">African Conservation Foundation &middot; Buea, Cameroon</p>
+        <p class="mt-2 text-[14.5px] leading-relaxed text-char/75 max-w-2xl">
+          Directed a 20-person team of rangers and local influencers on a campaign that
+          raised $25,000 to protect cross-river gorillas, coordinating roughly 1,000
+          awareness articles and weekly donor reporting.
+        </p>
+      </div>
+
+      <div class="relative md:pl-[11.5rem] pl-6">
+        <span class="ledger-dot"></span>
+        <p class="absolute left-0 top-0 hidden md:block font-mono text-xs text-ink/50 w-32 text-right pr-6">2022</p>
+        <p class="md:hidden font-mono text-xs text-gold mb-1">May &mdash; Nov 2022</p>
+        <h3 class="font-display text-lg text-ink">Sustainability &amp; Impact Analyst Intern</h3>
+        <p class="font-mono text-xs uppercase tracking-widest text-slate mt-1">Capital Coalition &middot; United Kingdom, Remote</p>
+        <p class="mt-2 text-[14.5px] leading-relaxed text-char/75 max-w-2xl">
+          Analyzed environmental and impact data to develop a sustainability strategy that
+          reduced carbon emissions and increased renewable energy use; co-presented
+          findings to natural capital stakeholders in Africa.
+        </p>
+      </div>
+
+      <div class="relative md:pl-[11.5rem] pl-6">
+        <span class="ledger-dot"></span>
+        <p class="absolute left-0 top-0 hidden md:block font-mono text-xs text-ink/50 w-32 text-right pr-6">2021</p>
+        <p class="md:hidden font-mono text-xs text-gold mb-1">Jun &mdash; Aug 2021</p>
+        <h3 class="font-display text-lg text-ink">Research Intern</h3>
+        <p class="font-mono text-xs uppercase tracking-widest text-slate mt-1">ALU School of Wildlife Conservation &middot; Kigali, Rwanda</p>
+        <p class="mt-2 text-[14.5px] leading-relaxed text-char/75 max-w-2xl">
+          Collected three months of field data on ecotourism, carbon markets, hunting, and
+          non-timber forest products, contributing country case studies to the State of the
+          Wildlife Economy in Africa report.
+        </p>
+      </div>
+
+    </div>
   </div>
-  <div class="contents-right">
-    <h3>Leadership &amp; Community</h3>
-    <p>
-      I serve as Treasurer of JMU's Graduate Student Association and Committee Chair of APPAM's BIPOC in Public Policy group, and completed a Graduate Fellowship with the UN Association of the National Capital Area.
-     </p>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-24">
+  <div class="flex items-end justify-between mb-12 gap-6">
+    <h2 class="font-display text-3xl md:text-4xl text-ink">Education</h2>
+    <p class="hidden md:block font-mono text-[11px] uppercase tracking-widest text-ink/40 mb-1">03 &mdash; Academic record</p>
   </div>
-</div>
 
+  <div class="grid md:grid-cols-2 gap-6">
+    <div class="border border-ink/10 bg-white/70 p-7">
+      <p class="font-mono text-xs text-gold">Expected May 2027</p>
+      <h3 class="font-display text-xl text-ink mt-2">Master of Public Administration</h3>
+      <p class="font-mono text-xs uppercase tracking-widest text-slate mt-1">James Madison University &middot; Harrisonburg, Virginia</p>
+      <p class="mt-3 text-[14.5px] leading-relaxed text-char/75">
+        Coursework: Grant Writing &amp; Management, Program Evaluation, Research Methods for
+        Program Evaluation, Public Organization Behavior, Environmental Policy.
+      </p>
+    </div>
+    <div class="border border-ink/10 bg-white/70 p-7">
+      <p class="font-mono text-xs text-gold">July 2023</p>
+      <h3 class="font-display text-xl text-ink mt-2">B.A. International Business &amp; Trade</h3>
+      <p class="font-mono text-xs uppercase tracking-widest text-slate mt-1">African Leadership University &middot; Kigali, Rwanda</p>
+      <p class="mt-3 text-[14.5px] leading-relaxed text-char/75">
+        Coursework: Business Analytics, Data &amp; Decisions, International Economic Issues
+        &amp; Challenges, African Studies, Entrepreneurial Leadership.
+      </p>
+    </div>
+  </div>
+</section>
 
+<!-- ============ PUBLICATIONS ============ -->
+<section id="publications" class="bg-ink text-parchment">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-24">
+    <div class="flex items-end justify-between mb-12 gap-6">
+      <h2 class="font-display text-3xl md:text-4xl text-white">Publications</h2>
+      <p class="hidden md:block font-mono text-[11px] uppercase tracking-widest text-parchment/40 mb-1">04 &mdash; Written record</p>
+    </div>
 
-      </section>
-        
-      <footer class="footer">
-    <p>&copy; Valerie Brou 2026</p>
-    <p>Built with Jekyll and the <a href="https://github.com/nrandecker/particle">particle</a> template by <a href="https://github.com/nrandecker">Nathan Randecker</a></p>
+    <ul class="space-y-7 max-w-3xl">
+      <li class="border-b border-white/10 pb-7">
+        <p class="text-[15px] leading-relaxed">
+          Taylor, J., &amp; Brou, V. J. (2026). <span class="italic">Ethical Decision-Making and
+          Policy Analysis in U.S. Executive Orders: A Framework for Public and Nonprofit
+          Governance.</span>
+        </p>
+        <p class="font-mono text-[11px] uppercase tracking-widest text-gold mt-2">Forthcoming</p>
+      </li>
+      <li class="border-b border-white/10 pb-7">
+        <p class="text-[15px] leading-relaxed">
+          Taylor, J., &amp; Brou, V. J. (2026). <span class="italic">Ethics in NGOs: Response,
+          Resilience, and Sustainability.</span>
+        </p>
+        <p class="font-mono text-[11px] uppercase tracking-widest text-gold mt-2">Forthcoming</p>
+      </li>
+      <li class="border-b border-white/10 pb-7">
+        <p class="text-[15px] leading-relaxed">
+          Sinsin, C. B. L., Snyman, S., Brou, V. J., &amp; Sogbohossou, E. (2022).
+          <span class="italic"> State of the Wildlife Economy in Benin.</span> African
+          Leadership University, Kigali, Rwanda.
+        </p>
+      </li>
+      <li>
+        <p class="text-[15px] leading-relaxed">
+          Brou, V. J. S. (2022). <span class="italic">Evaluating the awareness of the
+          endangeredness of Pygmy Hippos and the actions of stakeholders for their
+          conservation in C&ocirc;te d'Ivoire.</span> African Leadership University.
+        </p>
+        <a href="https://tinyurl.com/bdz5r8p4" target="_blank" rel="noopener" class="inline-block mt-2 font-mono text-[11px] uppercase tracking-widest text-gold hover:text-goldlight transition-colors">
+          Read on Librarika &rarr;
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ RECOGNITION / SKILLS ============ -->
+<section id="recognition" class="max-w-6xl mx-auto px-6 md:px-10 py-20 md:py-28">
+  <div class="flex items-end justify-between mb-12 gap-6">
+    <h2 class="font-display text-3xl md:text-4xl text-ink">Recognition &amp; Skills</h2>
+    <p class="hidden md:block font-mono text-[11px] uppercase tracking-widest text-ink/40 mb-1">05 &mdash; Credentials</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-10">
+    <div>
+      <h3 class="font-mono text-[11px] uppercase tracking-widest text-slate mb-4">Awards &amp; Delegations</h3>
+      <ul class="space-y-2.5 text-[14.5px] text-char/80">
+        <li class="flex gap-2"><span class="text-gold">&middot;</span>World Bank Youth Summit 2026 — Youth Delegate, Top 6 Innovation Lab Finalist</li>
+        <li class="flex gap-2"><span class="text-gold">&middot;</span>UN Global Engagement Summit — UNA-NCA Cohort, 2026</li>
+        <li class="flex gap-2"><span class="text-gold">&middot;</span>Research &amp; Data Analysis Award, ALU School of Wildlife Conservation</li>
+        <li class="flex gap-2"><span class="text-gold">&middot;</span>Young Diplomat Forum Certified, Global Diplomacy Forum</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-mono text-[11px] uppercase tracking-widest text-slate mb-4">Certifications</h3>
+      <ul class="space-y-2.5 text-[14.5px] text-char/80">
+        <li class="flex gap-2"><span class="text-gold">&middot;</span>Certified Odoo V16</li>
+        <li class="flex gap-2"><span class="text-gold">&middot;</span>McKinsey Forward Program</li>
+        <li class="flex gap-2"><span class="text-gold">&middot;</span>Exercising Leadership: Foundational Principles, HarvardX</li>
+        <li class="flex gap-2"><span class="text-gold">&middot;</span>Environmental Economics &amp; Natural Resource Management, Senghor University</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="font-mono text-[11px] uppercase tracking-widest text-slate mb-4">Skills &amp; Languages</h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="text-[12px] font-mono border border-ink/15 px-3 py-1.5 text-ink/70">R</span>
+        <span class="text-[12px] font-mono border border-ink/15 px-3 py-1.5 text-ink/70">SPSS</span>
+        <span class="text-[12px] font-mono border border-ink/15 px-3 py-1.5 text-ink/70">NVivo</span>
+        <span class="text-[12px] font-mono border border-ink/15 px-3 py-1.5 text-ink/70">Tableau</span>
+        <span class="text-[12px] font-mono border border-ink/15 px-3 py-1.5 text-ink/70">Odoo</span>
+        <span class="text-[12px] font-mono border border-ink/15 px-3 py-1.5 text-ink/70">Qualtrics</span>
+        <span class="text-[12px] font-mono border border-ink/15 px-3 py-1.5 text-ink/70">Program Evaluation</span>
+        <span class="text-[12px] font-mono border border-ink/15 px-3 py-1.5 text-ink/70">English — Native</span>
+        <span class="text-[12px] font-mono border border-ink/15 px-3 py-1.5 text-ink/70">French — Native</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT / FOOTER ============ -->
+<footer id="contact" class="bg-inkdeep text-parchment">
+  <div class="max-w-6xl mx-auto px-6 md:px-10 py-16 md:py-20">
+    <div class="grid md:grid-cols-[1fr_auto] gap-10 items-end">
+      <div>
+        <p class="font-mono text-[11px] uppercase tracking-widest text-gold mb-4">Let's talk</p>
+        <h2 class="font-display text-3xl md:text-4xl text-white max-w-lg">
+          Open to policy, research, and program roles — including opportunities at the World Bank.
+        </h2>
+      </div>
+      <div class="flex flex-col gap-3 md:items-end">
+        <a href="mailto:valeriejemimab@gmail.com" class="font-mono text-sm text-white hover:text-gold transition-colors">valeriejemimab@gmail.com</a>
+        <a href="tel:+15405607496" class="font-mono text-sm text-parchment/70 hover:text-gold transition-colors">+1 540 560 7496</a>
+        <a href="https://www.linkedin.com/in/valeriebrou" target="_blank" rel="noopener" class="font-mono text-sm text-parchment/70 hover:text-gold transition-colors">linkedin.com/in/valeriebrou</a>
+      </div>
+    </div>
+    <div class="mt-14 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 font-mono text-[11px] uppercase tracking-widest text-parchment/40">
+      <span>&copy; 2026 Valerie Jemima Sara Brou</span>
+      <span>Virginia, United States</span>
+    </div>
+  </div>
 </footer>
-<script src="particles.js/2.0.0/particles.min.js"></script>
-<script src="assets/js/sweet-scroll.min.js"></script>
-<script src="assets/js/main.js"></script>
 
-  </body>
+</body>
 </html>
